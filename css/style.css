@@ -108,13 +108,22 @@ img {
   object-fit:cover;
 }
 
+.wrigley-field {
+  max-width: 400px;
+  max-height: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
 .footer-pictures img, .favorite-players img {
   max-width: 400px;
   max-height: 300px;
   width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Video Styling */
