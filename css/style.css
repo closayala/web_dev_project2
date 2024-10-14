@@ -8,26 +8,26 @@ body {
 }
 
 h1, h2, h3, h4, p {
-  margin: 0 0 15px;
+  margin: 0 0 1.5em; /* Using rem for consistent spacing */
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2rem; /* Using rem for padding */
   text-align: center;
 }
 
 /* Navigation Menu */
 .menu {
   background-color: #053368;
-  padding: 15px 0;
-  margin-bottom: 30px;
+  padding: 1.5rem 0; /* Using rem for padding */
+  margin-bottom: 3rem; /* Using rem for margin */
 }
 
 .menu h1 {
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 1rem; /* Using rem for margin */
 }
 
 .menu ul {
@@ -37,23 +37,23 @@ h1, h2, h3, h4, p {
 
 .menu ul li {
   display: inline;
-  margin-right: 15px;
+  margin-right: 1.5rem; /* Using rem for spacing */
 }
 
 .menu ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Using rem for font size */
 }
 
 /* Header styles */
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.5rem; /* Using rem for font size */
   color: #053368;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2rem; /* Using rem for font size */
   color: #018CC7;
 }
 
@@ -65,25 +65,25 @@ h3, h4 {
 /* Content styles */
 .main-content, .basic-info, .work-experience, .projects, .education, .hobbies, .sports-played, .bears-video {
   background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 30px;
+  border-radius: 1rem; /* Using rem for border radius */
+  padding: 2rem; /* Using rem for padding */
+  margin-bottom: 3rem; /* Using rem for margin */
 }
 
 p, ul, ol {
-  font-size: 1.1rem;
+  font-size: 1.1rem; /* Using rem for font size */
 }
 
 /* Table Styles */
 .fact-table {
   width: 100%;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 1rem; /* Using rem for border radius */
   margin: 0 auto;
 }
 
 .fact-table th, .fact-table td {
-  padding: 15px;
+  padding: 1.5rem; /* Using rem for padding */
   text-align: center;
   border: 1px solid #333;
 }
@@ -91,54 +91,54 @@ p, ul, ol {
 .fact-table th {
   background-color: #018CC7;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Using rem for font size */
 }
 
 .fact-table td {
-  font-size: 1rem;
+  font-size: 1rem; /* Using rem for font size */
 }
 
 /* Image styles */
 img {
-  display:block;
+  display: block;
   max-width: 100%;
   height: auto;
-  margin: 0 auto 20px;
-  border-radius: 10px;
-  object-fit:cover;
+  margin: 0 auto 2rem; /* Using rem for margin */
+  border-radius: 1rem; /* Using rem for border radius */
+  object-fit: cover;
 }
 
 .wrigley-field {
-  max-width: 400px !important;
-  max-height: 300px !important;
-  width: auto !important;
-  height: auto !important;
-  border-radius: 10px;
-  display: block !important;
-  margin: 0 auto 20px;
+  max-width: 25rem; /* Using rem for max-width */
+  max-height: 20rem; /* Using rem for max-height */
+  width: auto;
+  height: auto;
+  border-radius: 1rem; /* Using rem for border radius */
+  display: block;
+  margin: 0 auto 2rem; /* Using rem for margin */
 }
 
 .footer-pictures img, .favorite-players img {
-  max-width: 400px;
-  max-height: 300px;
+  max-width: 25rem; /* Using rem for max-width */
+  max-height: 20rem; /* Using rem for max-height */
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 1rem; /* Using rem for border radius */
 }
 
 /* Video Styling */
 .bears-video {
   width: 100%;
-  max-width: 700px;
-  height: 400px;
+  max-width: 43.75rem; /* Using rem for max-width (700px) */
+  height: 25rem; /* Using rem for height (400px) */
   border: none;
 }
 
 /* Footer Styles for Images */
 .footer-pictures img {
   width: 100%;
-  max-width: 400px;
-  margin: 10px auto;
+  max-width: 25rem; /* Using rem for max-width */
+  margin: 1rem auto; /* Using rem for margin */
   display: block;
 }
 
@@ -148,10 +148,34 @@ img {
 
 /* List Styling */
 ul, ol {
-  padding-left: 40px;
+  padding-left: 2.5rem; /* Using rem for padding */
   text-align: left;
 }
 
 ul li, ol li {
-  margin-bottom: 10px;
+  margin-bottom: 1rem; /* Using rem for margin */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* Fluid layout adjustment */
+    padding: 1rem; /* Using rem for padding */
+  }
+
+  .menu {
+    padding: 1rem 0; /* Using rem for padding */
+  }
+
+  h1 {
+    font-size: 2rem; /* Adjusting font size for smaller screens */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Adjusting font size for smaller screens */
+  }
+
+  .wrigley-field, .footer-pictures img {
+    max-width: 100%; /* Allowing images to be fluid */
+  }
 }
