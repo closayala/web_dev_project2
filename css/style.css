@@ -1,0 +1,137 @@
+/* General page styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0 0 15px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation Menu */
+.menu {
+  background-color: #053368;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+.menu h1 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Header styles */
+h1 {
+  font-size: 2.5rem;
+  color: #053368;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #018CC7;
+}
+
+h3, h4 {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Content styles */
+.main-content, .basic-info, .work-experience, .projects, .education, .hobbies, .sports-played, .bears-video {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+p, ul, ol {
+  font-size: 1.1rem;
+}
+
+/* Table Styles */
+.fact-table {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.fact-table th, .fact-table td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.fact-table th {
+  background-color: #018CC7;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.fact-table td {
+  font-size: 1rem;
+}
+
+/* Image styles */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Video Styling */
+.bears-video {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  border: none;
+}
+
+/* Footer Styles for Images */
+.footer-pictures img {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  display: block;
+}
+
+.footer-pictures {
+  text-align: center;
+}
+
+/* List Styling */
+ul, ol {
+  padding-left: 40px;
+  text-align: left;
+}
+
+ul li, ol li {
+  margin-bottom: 10px;
+}
