@@ -4,22 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Professional Resume Page</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="menu">
-      <h1>My Website Navigation</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
-        <li><a href="bears.html">Chicago Bears</a></li>
+    <div class="menu" id="navigation-menu">
+      <h1 class="menu-title">My Website Navigation</h1>
+      <ul class="menu-list">
+        <li class="menu-item"><a href="index.html">Home</a></li>
+        <li class="menu-item"><a href="resume.html">Resume</a></li>
+        <li class="menu-item"><a href="aboutme.html">About Me</a></li>
+        <li class="menu-item"><a href="bears.html">Chicago Bears</a></li>
       </ul>
     </div>
-    <div class="work_experience">
-      <h2>Work Experience</h2>
-      <h3>JP. Morgan Chase & Co. - Chicago, IL.</h3>
-      <h4>Software Development/Engineering Intern - Jun. 2022 through Aug. 2022</h4>
-      <ul>
+    <div class="work-experience" id="work-experience-section">
+      <h2 class="section-title">Work Experience</h2>
+      <h3 class="job-title">JP. Morgan Chase & Co. - Chicago, IL.</h3>
+      <h4 class="job-position">Software Development/Engineering Intern - Jun. 2022 through Aug. 2022</h4>
+      <ul class="job-details">
         <li>Collaborated with my mentor in troubleshooting code through pair programming, resulting in a 20% reduction in bug reports and a 15% increase in code quality</li>
         <li>Implemented a structured approach to problem-solving, including recreating issues and brainstorming potential solutions by using Postman API, resulting in a 30% increase in successful issue resolutions and a 20% reduction in recurring problems, ultimately improving team efficiency and client satisfaction</li>
         <li>Leveraged Amazon Web Services (AWS) Console to proactively identify and analyze code issues through log inspection, resulting in a decrease in client-reported disruptions, enhancing overall system reliability and customer satisfaction</li>
@@ -30,20 +31,20 @@
         <li>Worked in team setting to organize and prepare our program for an estimated 5,000 new clients to begin onboarding using our system</li>
       </ul>
     </div>
-    <div class="projects">
-      <h2>Projects</h2>
-      <h3>Illinois Institute of Technology - Chicago, IL.</h3>
-      <h4>Airport Flight/Pilot Schedule Service - Sep. 2023 through Feb. 2023</h4>
-      <ul>
+    <div class="projects" id="projects-section">
+      <h2 class="section-title">Projects</h2>
+      <h3 class="project-location">Illinois Institute of Technology - Chicago, IL.</h3>
+      <h4 class="project-title">Airport Flight/Pilot Schedule Service - Sep. 2023 through Feb. 2023</h4>
+      <ul class="project-details">
         <li>Created a plan and met with fake investor (Professor) which would be something that we would encounter in the workforce</li>
         <li>Collaborating with coding partner to develop a service in Java that would allow us to read a “.txt” file and store it into an array which we would then be able to call by inputting a pilot or stewardess employee id to find the flights that a pilot or stewardess has or the opposite where we could input a flight id where we could see what flights they will be on</li>
         <li>Implementing functionality to use a random number generator for air traffic controllers which would be able to mimic real life</li>
         <li>Using Greenfoot’s Java Graphics library, we will be able to flesh out the project so that it isn’t just bare bones in the console</li>
         <li>Adding graphics to represent a fake scenario of a user being able to see the current flights and their location</li>
       </ul>
-      <h3>Amundsen High School - Chicago, IL.</h3>
-      <h4>Tardy Student Email Service - Apr. 2023 through Jun. 2023</h4>
-      <ul>
+      <h3 class="project-location">Amundsen High School - Chicago, IL.</h3>
+      <h4 class="project-title">Tardy Student Email Service - Apr. 2023 through Jun. 2023</h4>
+      <ul class="project-details">
         <li>Developed and coded a complex script using JavaScript that would read a student id when they are late to class and connect that student id to a parent id and email stored in a Google Spreadsheet file which was designed to email parents almost instantly if their student was tardy or absent from class</li>
         <li>Instructed a team of three other students on how we should go about connecting the spreadsheet to our code file</li>
         <li>Collaborated with Head of Information Technology Security at High School to learn from each other on how we must optimize the program</li>
@@ -51,9 +52,9 @@
         <li>Begun trying to implement program into other schools monitored by Chicago Public Schools (CPS) to help decrease tardies and absences in the whole CPS District which will lead to higher percentages in High School graduates per year</li>
         <li>Educated administration of local High School on this program so that any employee can learn to use it effectively, resulting in a 45% increase in emails sent to parents because of all school faculty knowing how to use our program</li>
       </ul>
-      <h3>Amundsen High School - Chicago, IL.</h3>
-      <h4>Amundsen Athletics Foundation Website - Sep. 2021 through May 2023</h4>
-      <ul>
+      <h3 class="project-location">Amundsen High School - Chicago, IL.</h3>
+      <h4 class="project-title">Amundsen Athletics Foundation Website - Sep. 2021 through May 2023</h4>
+      <ul class="project-details">
         <li>Effectively implemented a donation service for the athletic department’s using Java to help raise many for the many sports teams at this High School, resulting in $50,000 in donations during the 2022-2023 academic year because of the webpage my team and I created which can be found by searching “Amundsen Athletics Foundation” into your browser</li>
         <li>Collaborated with the Amundsen Athletics Foundation Board of Directors to fulfill the requirements since the foundation operates as a charitable 501(c)(3) and is dedicated to promoting school and community support for the Amundsen High school athletics program</li>
         <li>Updated website on a weekly basis with new information that the team wanted the community to see regarding new fundraising events</li>
@@ -62,11 +63,11 @@
         <li>Participated in meetings between the athletics foundation and prospective donors such as Cubs Community, Jersey Mike’s Subs, and Kia of Lincolnwood to discuss how they can join the “League of Allies” and how they would like their respective companies to be shown at sporting events</li>
       </ul>
     </div>
-    <div class="education">
-      <h2>Education</h2>
-      <h3>Illinois Institute of Technology | College of Computing - Chicago, IL.</h3>
-      <h4>Bachelor of Science in Applied Cybersecurity and Information Technology - Aug. 2023 through Present</h4>
-      <ul>
+    <div class="education" id="education-section">
+      <h2 class="section-title">Education</h2>
+      <h3 class="school-name">Illinois Institute of Technology | College of Computing - Chicago, IL.</h3>
+      <h4 class="degree-title">Bachelor of Science in Applied Cybersecurity and Information Technology - Aug. 2023 through Present</h4>
+      <ul class="education-details">
        <li>Certificates</li>
        <li>1. IT Specialist - HTML, CSS, and JavaScript (Issued by: Certiport - A Pearson VUE Business)</li>
        <li>2. Adobe Certified Professional - Visual Design Using Photoshop (Issued by: Adobe)</li>
