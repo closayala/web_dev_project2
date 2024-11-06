@@ -1,89 +1,79 @@
 /* General page styles */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Arial', Helvetica, sans-serif;
   background-color: #f4f4f9;
   margin: 0;
   padding: 0;
   color: #333;
 }
 
-h1, h2, h3, h4, p {
-  margin: 0 0 1.5em; /* Using rem for consistent spacing */
-}
-
+/* Centering content with margins */
 .container {
   width: 80%;
   margin: 0 auto;
-  padding: 2rem; /* Using rem for padding */
+  padding: 2rem;
   text-align: center;
 }
 
 /* Navigation Menu */
 .menu {
   background-color: #053368;
-  padding: 1.5rem 0; /* Using rem for padding */
-  margin-bottom: 3rem; /* Using rem for margin */
+  padding: 1.5rem 0;
+  margin-bottom: 3rem;
+  text-align: center; /* Centering navigation */
 }
 
 .menu h1 {
   color: #fff;
-  margin-bottom: 1rem; /* Using rem for margin */
+  margin-bottom: 1rem;
 }
 
 .menu ul {
-  list-style: none;
+  display: inline-block; /* Centering list items */
   padding: 0;
 }
 
 .menu ul li {
   display: inline;
-  margin-right: 1.5rem; /* Using rem for spacing */
+  margin-right: 1.5rem;
 }
 
 .menu ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2rem; /* Using rem for font size */
+  font-size: 1.2rem;
 }
 
 /* Header styles */
 h1 {
-  font-size: 2.5rem; /* Using rem for font size */
+  font-size: 2.5rem;
   color: #053368;
 }
 
 h2 {
-  font-size: 2rem; /* Using rem for font size */
+  font-size: 2rem;
   color: #018CC7;
-}
-
-h3, h4 {
-  color: #333;
-  font-weight: 600;
 }
 
 /* Content styles */
 .main-content, .basic-info, .work-experience, .projects, .education, .hobbies, .sports-played, .bears-video {
   background-color: #fff;
-  border-radius: 1rem; /* Using rem for border radius */
-  padding: 2rem; /* Using rem for padding */
-  margin-bottom: 3rem; /* Using rem for margin */
-}
-
-p, ul, ol {
-  font-size: 1.1rem; /* Using rem for font size */
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem auto; /* Adding margins */
+  width: 90%; /* Relative width for fluidity */
 }
 
 /* Table Styles */
 .fact-table {
   width: 100%;
   background-color: #fff;
-  border-radius: 1rem; /* Using rem for border radius */
+  border-radius: 1rem;
   margin: 0 auto;
 }
 
 .fact-table th, .fact-table td {
-  padding: 1.5rem; /* Using rem for padding */
+  padding: 1.5rem;
   text-align: center;
   border: 1px solid #333;
 }
@@ -91,11 +81,7 @@ p, ul, ol {
 .fact-table th {
   background-color: #018CC7;
   color: white;
-  font-size: 1.2rem; /* Using rem for font size */
-}
-
-.fact-table td {
-  font-size: 1rem; /* Using rem for font size */
+  font-size: 1.2rem;
 }
 
 /* Image styles */
@@ -103,79 +89,73 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 0 auto 2rem; /* Using rem for margin */
-  border-radius: 1rem; /* Using rem for border radius */
-  object-fit: cover;
-}
-
-.wrigley-field {
-  max-width: 25rem; /* Using rem for max-width */
-  max-height: 20rem; /* Using rem for max-height */
-  width: auto;
-  height: auto;
-  border-radius: 1rem; /* Using rem for border radius */
-  display: block;
-  margin: 0 auto 2rem; /* Using rem for margin */
+  margin: 0 auto 2rem;
+  border-radius: 1rem;
 }
 
 .footer-pictures img, .favorite-players img {
-  max-width: 25rem; /* Using rem for max-width */
-  max-height: 20rem; /* Using rem for max-height */
+  max-width: 25rem;
+  max-height: 20rem;
   width: 100%;
   height: auto;
-  border-radius: 1rem; /* Using rem for border radius */
+  border-radius: 1rem;
 }
 
 /* Video Styling */
 .bears-video {
   width: 100%;
-  max-width: 43.75rem; /* Using rem for max-width (700px) */
-  height: 25rem; /* Using rem for height (400px) */
+  max-width: 43.75rem;
+  height: 25rem;
   border: none;
 }
 
-/* Footer Styles for Images */
-.footer-pictures img {
-  width: 100%;
-  max-width: 25rem; /* Using rem for max-width */
-  margin: 1rem auto; /* Using rem for margin */
-  display: block;
+/* Layout and Positioning */
+h1 {
+  position: relative;
+  top: 10px;
 }
 
+.basic-info {
+  float: left;
+  width: 45%;
+}
+
+.projects {
+  float: right;
+  width: 45%;
+}
+
+/* Footer Styles for Images */
 .footer-pictures {
   text-align: center;
 }
 
 /* List Styling */
 ul, ol {
-  padding-left: 2.5rem; /* Using rem for padding */
+  padding-left: 2.5rem;
   text-align: left;
 }
 
 ul li, ol li {
-  margin-bottom: 1rem; /* Using rem for margin */
+  margin-bottom: 1rem;
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .container {
-    width: 90%; /* Fluid layout adjustment */
-    padding: 1rem; /* Using rem for padding */
-  }
-
-  .menu {
-    padding: 1rem 0; /* Using rem for padding */
+    width: 90%;
+    padding: 1rem;
   }
 
   h1 {
-    font-size: 2rem; /* Adjusting font size for smaller screens */
+    font-size: 2rem;
   }
 
   h2 {
-    font-size: 1.5rem; /* Adjusting font size for smaller screens */
+    font-size: 1.5rem;
   }
 
   .wrigley-field, .footer-pictures img {
-    max-width: 100%; /* Allowing images to be fluid */
+    max-width: 100%;
   }
 }
